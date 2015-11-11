@@ -9,10 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home Page</title>
+    <title>Log In</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -42,137 +42,53 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Limited Edition</a>
+                <a class="navbar-brand" href="HomePage.html">Limited Edition Tournaments</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="about.html">Games</a>
-                    </li>
-                    <li>
-                        <a href="services.html">Calendar</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Profile</a>
-                    </li>
-                    <li>
-                        <a href="logout.html">Log Out</a>            
-            <!-- /.navbar-collapse -->
-        </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">        </div>
         <!-- /.container -->
     </nav>
-        <!-- Page Content -->
+
+    <!-- Page Content -->
     <div class="container">
 
-        <!-- Marketing Icons Section -->
+        <!-- Content Row -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Your Home Page
-                </h1>
-            </div>
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4> Your Events </h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>This section will display the magic tournaments that you have signed up for. Be sure to check the "Upcoming Magic Events" section to sign up for upcoming Magic: The Gathering tournaments or events!</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>Upcoming Events</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>There doesn't seem to be any upcoming Magic: The Gathering events right now. Check back frequently to sign up for future events.</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>Past Events</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Once you have signed up for and attended a tournament or event, it will be displayed within this box so get out there and get playing!</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Section -->
+        <!-- Form -->
+        <!--  -->
+        <br> <br>
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Your Decks</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Your Tournament Record</h2>
+            <div class="col-md-6">
+                <h3>Log In</h3>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Username:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your username.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Password</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your password.">
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary" href="HomePage.html">Log In</button>
+                </form>
             </div>
             <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                <center>
+                    <br><br><br>
+                    <h3> Haven't registered yet? Sign Up Here. </h3>
+                    <br> <br>
+                    <a class="btn btn-primary btn-lg" href="SignUpPage.html">Sign Up</a>
+                </center>
             </div>
         </div>
         <!-- /.row -->
-
-        <hr>
-
-        <!-- Call to Action Section -->
-        <div class="well">
-            <div class="row">
-                <div class="col-md-8">
-                    <p>Visit your Games Page to see your full tournament history.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Your Tournament History</a>
-                </div>
-            </div>
-        </div>
 
         <hr>
 
@@ -194,12 +110,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
+    <!-- Contact Form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
 </body>
 
