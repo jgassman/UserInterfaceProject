@@ -69,49 +69,54 @@
         <!-- Sign Up Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <form name="signup" id="SignUpForm" novalidate>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Full Name:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <input type="text" class="form-control" id="name" placeholder="Nathan Davis" required data-validation-required-message="Please enter your name.">
                             <p class="help-block"></p>
                         </div>
                     </div>
 					<div class="control-group form-group">
                         <div class="controls">
                             <label>Date of Birth:</label>
-                            <input type="text" class="form-control" id="birthday" required data-validation-required-message="Please enter your date of birth.">
+                            <input type="text" class="form-control" id="birthday" placeholder="9/21/1993" required data-validation-required-message="Please enter your date of birth.">
                             <p class="help-block"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Email Address:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                            <input type="email" class="form-control" id="email" placeholder="ndavis@letournaments.com "required data-validation-required-message="Please enter your email address.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Username:</label>
-                            <input type="text" class="form-control" id="username" required data-validation-required-message="Please enter your username" maxlength="999" style="resize:none">
+                            <input type="text" class="form-control" id="username" placeholder="ndavis1" required data-validation-required-message="Please enter your username" maxlength="999" style="resize:none">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Password:</label>
-                            <input type="tel" class="form-control" id="password" required data-validation-required-message="Please enter your password.">
+                            <input type="password" class="form-control" id="password" required data-validation-required-message="Please enter your password.">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Confirm Password:</label>
-                            <input type="tel" class="form-control" id="passwordconfirmation" required data-validation-required-message="Please confirm your password.">
+                            <input type="password" class="form-control" id="passwordconfirmation" required data-validation-required-message="Please confirm your password.">
                         </div>
                     </div>
+                        <br>
+                        <div> <input type="radio" name="employee" value="N" checked> I am NOT an employee of Limited Edition Comics. </div>
+                        <br>
+                        <div> <input type="radio" name="employee" value="Y"> I work for Limited Edition Comics.<p> (You will be asked to enter your employee code) </p> </div>
+                        <br> <br>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <a type="submit" class="btn btn-primary">Sign Up</a>
                 </form>
             </div>
 
